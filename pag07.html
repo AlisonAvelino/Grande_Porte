@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>
+            Meu primeiro formulário
+        </title>
+    </head>
+    <body>
+        <h2>Cadastro de dados</h2>
+        <form method="GET">
+            <table>
+                <tr>
+                    <td>Data e Hora</td>
+                    <td><input type="datetime-local" 
+                               id="campoDataHora" 
+                               ></td>
+                </tr>
+                <tr>
+                    <td>Usuário</td>
+                    <td><input type="text" 
+                               id="campoCodigo" 
+                               name="campoCodigo"
+                               value="Nome"
+                               size="20"
+                               maxlength="10"/></td>
+                </tr>
+                <tr>
+                    <td>Senha</td>
+                    <td><input type="password" 
+                               id="campoCodigo"/></td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td>
+                        <input type="radio" name="campoTime" value="São Paulo" checked/>São Paulo<br/>
+                        <input type="radio" name="campoTime" value="Palmeiras"/>Palmeiras<br/>
+                        <input type="radio" name="campoTime" value="Santos"/>Santos<br/>
+                        <input type="radio" name="campoTime" value="Corinthians"/>Corinthians<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>
+                        <input type="checkbox" name="campoHobby" value="Leitura" />Leitura<br/>
+                        <input type="checkbox" name="campoHobby" value="Música"/>Música<br/>
+                        <input type="checkbox" name="campoHobby" value="Artesanato"/>Artesanato<br/>
+                        <input type="checkbox" name="campoHobby" value="Jogos"/>Jogos<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Observações</td>
+                    <td>
+                        <textarea name="campoObservação" rows="5" cols="20" maxlength="150"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>UF</td>
+                    <td>
+                        <select name="ufSudeste" id="">
+                            <option> SP</option>
+                            <option> RJ</option>
+                            <option> MG</option>
+                            <option> ES</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="" value="Enviar"/>
+                        <input type="reset" name="" value="Redefinir"/>
+                    </td>
+                </tr>
+            </table>
+            
+           
+        </form>
+    </body>
+</html>
